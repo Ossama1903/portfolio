@@ -3,7 +3,10 @@ import Button from "../Button";
 
 const HeroButton = () => {
   return (
-    <Button onClick={() => console.log("Check out my course button")}>
+    <Button
+      className="px-10 py-5"
+      onClick={() => console.log("Check out my course button")}
+    >
       Check out my course!
     </Button>
   );

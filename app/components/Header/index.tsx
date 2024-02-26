@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="flex py-7 px-5 bg-red-600">
+    <nav className="flex py-7 px-12 bg-red-600">
       <div>logo</div>
       <ul className="flex ml-auto list-none">
         <li className="mx-2">About</li>
