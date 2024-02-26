@@ -7,7 +7,7 @@ const HeroButton = () => {
       className="px-10 py-5"
       onClick={() => console.log("Check out my course button")}
     >
-      Check out my course!
+      Check out my projects!
     </Button>
   );
 };
