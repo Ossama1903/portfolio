@@ -2,10 +2,10 @@ import ResumeButton from "../ResumeButton";
 
 const Header = () => {
   return (
-    <nav className="flex py-12 px-12 justify-center items-center">
-      <div>logo</div>
+    <nav className="flex py-8 justify-center items-center fixed bg-inherit w-full opacity-95 shadow-2xl z-50">
+      <div className="ml-10">logo</div>
       <ul className="flex ml-auto list-none mr-5">
-        <li className="mx-5">
+        <li className="mx-5 opacity-100">
           <span className="text-purple-400">01.</span> About
         </li>
         <li className="mx-5">
@@ -18,7 +18,9 @@ const Header = () => {
           <span className="text-purple-400">04.</span> Contact
         </li>
       </ul>
-      <ResumeButton />
+      <div className="mr-10">
+        <ResumeButton />
+      </div>
     </nav>
   );
 };
