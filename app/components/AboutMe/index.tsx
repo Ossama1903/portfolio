@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-12 xl:gap-x-28">
-      <div className="col-span-12 lg:col-span-7">
+    <div className="grid grid-cols-12 xl:gap-x-24">
+      <div className="col-span-12 lg:col-span-8">
         <p>
           Hello! My name is Brittany and I enjoy creating things that live on
           the internet. My interest in web development started back in 2012 when
@@ -46,7 +46,7 @@ const AboutMe = () => {
           </ul>
         </div>
       </div>
-      <div className="col-span-12 lg:col-span-4 flex  justify-center items-center mt-12">
+      <div className="col-span-12 xl:col-span-4 flex justify-center items-center mt-12 xl:mt-0">
         <Image
           src="/images/me.jpeg"
           alt="Portfolio picture of Ossama Bin Bilal"
