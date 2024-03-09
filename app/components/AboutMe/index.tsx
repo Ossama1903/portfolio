@@ -23,21 +23,21 @@ const AboutMe = () => {
         <br />
         <p>Here are a few technologies I’ve been working with recently:</p>
         <div className="grid grid-cols-12 mt-6">
-          <ul className="col-span-6 md:col-span-3 list-none mb-4 xl:mb-0">
+          <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
             <li className="mb-1 text-purple-400 font-medium">
               JavaScrpit (ES6+)
             </li>
             <li className="mb-1 text-purple-400 font-medium">Typescript</li>
             <li className="mb-1 text-purple-400 font-medium">React</li>
           </ul>
-          <ul className="col-span-6 md:col-span-3 list-none mb-4 xl:mb-0">
+          <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
             <li className="mb-1 text-purple-400 font-medium">
               JavaScrpit (ES6+)
             </li>
             <li className="mb-1 text-purple-400 font-medium">Typescript</li>
             <li className="mb-1 text-purple-400 font-medium">React</li>
           </ul>
-          <ul className="col-span-6 md:col-span-3 list-none mb-4 xl:mb-0">
+          <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
             <li className="mb-1 text-purple-400 font-medium">
               JavaScrpit (ES6+)
             </li>
@@ -46,7 +46,7 @@ const AboutMe = () => {
           </ul>
         </div>
       </div>
-      <div className="col-span-12 xl:col-span-4 flex justify-center items-center mt-12 xl:mt-0">
+      <div className="col-span-12 xl:col-span-4 flex justify-center items-center lg:justify-normal lg:items-stretch xl:justify-center xl:items-center mt-12 xl:mt-0">
         <Image
           src="/images/me.jpeg"
           alt="Portfolio picture of Ossama Bin Bilal"

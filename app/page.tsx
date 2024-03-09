@@ -14,7 +14,7 @@ export default function Home() {
             <Hero />
           </div>
         </div>
-        <div className="py-12 bg-inherit">
+        <div id="aboutMe" className="py-12 bg-inherit">
           <HeadingWithBorder heading="01. About Me">
             <AboutMe />
           </HeadingWithBorder>
