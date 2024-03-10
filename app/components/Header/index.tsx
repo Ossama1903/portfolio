@@ -7,12 +7,14 @@ const Header = () => {
       <div className="ml-10">logo</div>
       <ul className="flex ml-auto list-none mr-5">
         <li className="mx-5 opacity-100">
-          <Link href="#aboutMe" className="no-underline text-white">
+          <Link href="#AboutMe" className="no-underline text-white">
             <span className="text-purple-400">01.</span> About
           </Link>
         </li>
         <li className="mx-5">
-          <span className="text-purple-400">02.</span> Experience
+          <Link href="#Experience" className="no-underline text-white">
+            <span className="text-purple-400">02.</span> Experience
+          </Link>
         </li>
         <li className="mx-5">
           <span className="text-purple-400">03.</span> Work
