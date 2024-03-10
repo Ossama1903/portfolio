@@ -4,7 +4,7 @@ import Button from "../Button";
 const HeroButton = () => {
   return (
     <Button
-      className="px-10 py-5"
+      className="px-7 py-3"
       onClick={() => console.log("Check out my course button")}
     >
       Check out my projects!

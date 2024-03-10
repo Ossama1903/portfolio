@@ -10,12 +10,12 @@ export default function Home() {
     <>
       <Header />
       <Container>
-        <div className="my-12 py-12 mb-12">
-          <div className="my-12 py-12 mb-12">
+        <div className="mt-12 pt-12">
+          <div className="py-12">
             <Hero />
           </div>
         </div>
-        <div id="AboutMe" className="py-12 bg-inherit">
+        <div id="AboutMe" className="py-2 bg-inherit">
           <div className="my-12 py-12 bg-inherit">
             <div className="py-12 bg-inherit">
               <HeadingWithBorder heading="01. About Me">
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="Experience" className="py-12 bg-inherit">
+        <div id="Experience" className="bg-inherit">
           <HeadingWithBorder heading="02. My Work Experience">
             <Experience />
           </HeadingWithBorder>

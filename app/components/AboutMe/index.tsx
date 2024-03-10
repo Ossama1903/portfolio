@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-12 xl:gap-x-24">
+    <div className="grid grid-cols-12 xl:gap-x-20">
       <div className="col-span-12 lg:col-span-8">
         <p>
           Hello! My name is Ossama and I enjoy creating things that live on
@@ -50,8 +50,8 @@ const AboutMe = () => {
         <Image
           src="/images/me.jpeg"
           alt="Portfolio picture of Ossama Bin Bilal"
-          width={350}
-          height={350}
+          width={300}
+          height={300}
           className="rounded-[50%]"
         />
       </div>
