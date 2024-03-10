@@ -40,6 +40,16 @@ export default function Home() {
         <Instagram className="mb-[9rem]" />
         <hr className="bg-white rotate-90 w-[15rem] ml-[-6.8rem]" />
       </div>
+      <div className="md:block fixed bottom-[11rem] right-[-8rem] hidden">
+        <p className="rotate-90">
+          <a
+            href="mailto:sheikhusamabilal@gmail.com"
+            className="text-white no-underline"
+          >
+            s h e i k h u s a m a b i l a l @ g m a i l . c o m
+          </a>
+        </p>
+      </div>
     </>
   );
 }
