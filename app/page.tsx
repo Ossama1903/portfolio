@@ -1,9 +1,12 @@
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import AboutMe from "./components/AboutMe";
 import Container from "./components/Container";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
 import HeadingWithBorder from "./components/HeadingWithBorder";
 import Hero from "./components/Hero";
+
+import XIcon from "@mui/icons-material/X";
 
 export default function Home() {
   return (
@@ -30,7 +33,13 @@ export default function Home() {
           </HeadingWithBorder>
         </div>
       </Container>
-      <h2>02. Where I've Worked</h2>
+      <div className="md:flex flex-col fixed bottom-5 left-5 hidden">
+        <LinkedIn className="mb-4" />
+        <XIcon className="mb-4" />
+        <GitHub className="mb-4" />
+        <Instagram className="mb-[9rem]" />
+        <hr className="bg-white rotate-90 w-[15rem] ml-[-6.8rem]" />
+      </div>
     </>
   );
 }

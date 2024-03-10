@@ -42,8 +42,9 @@ const Experience = () => {
   return (
     <div className="grid grid-cols-12 gap-4">
       <div className="col-span-3 grid grid-cols-12 h-fit">
-        {workExperience.map((experience: Experience) => (
+        {workExperience.map((experience: Experience, index) => (
           <button
+            key={index}
             onClick={() =>
               setActiveWorkExperience(
                 workExperience.filter(
