@@ -7,6 +7,7 @@ import HeadingWithBorder from "./components/HeadingWithBorder";
 import Hero from "./components/Hero";
 
 import XIcon from "@mui/icons-material/X";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,10 +35,15 @@ export default function Home() {
         </div>
       </Container>
       <div className="md:flex flex-col fixed bottom-5 left-5 hidden">
-        <LinkedIn className="mb-4" />
+        <Link
+          href="https://www.linkedin.com/in/ossama19/"
+          target="_blank"
+          className="text-white"
+        >
+          <LinkedIn className="mb-4" />
+        </Link>
         <XIcon className="mb-4" />
-        <GitHub className="mb-4" />
-        <Instagram className="mb-[9rem]" />
+        <GitHub className="mb-[9rem]" />
         <hr className="bg-white rotate-90 w-[15rem] ml-[-6.8rem]" />
       </div>
       <div className="md:block fixed bottom-[11rem] right-[-8rem] hidden">

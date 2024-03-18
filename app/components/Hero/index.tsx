@@ -1,3 +1,4 @@
+import Drawer from "../Drawer";
 import HeroButton from "../HeroButton";
 
 const Hero = () => {
@@ -5,6 +6,7 @@ const Hero = () => {
     <section id="hero">
       <h4 className="mb-7 text-purple-400 text-xl font-normal">
         Hi, my name is
+        {/* <Drawer /> */}
       </h4>
       <h1 className="text-5xl md:text-6xl lg:text-7x my-4">Ossama Bin Bilal</h1>
       <h1 className="text-5xl md:text-6xl lg:text-7x my-4">

@@ -8,7 +8,7 @@ const ResumeButton = () => {
       download="Ossama's resume"
       target="_blank"
     >
-      <Button className="py-2 px-5">Resume</Button>
+      <Button className="transition ease-in-out delay-150 py-2 px-5 cursor-pointer hover:bg-purple-400 hover:text-white">Resume</Button>
     </Link>
   );
 };
