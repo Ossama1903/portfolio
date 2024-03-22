@@ -1,13 +1,14 @@
+"use client";
 import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-12 xl:gap-x-20">
+    <div className={`grid grid-cols-12 xl:gap-x-20 `}>
       <div className="col-span-12 lg:col-span-8">
         <p>
-          Hello! My name is Ossama and I enjoy creating things that live on
-          the internet. My interest in web development started back in 2012 when
-          I decided to try editing custom Tumblr themes — turns out hacking
+          Hello! My name is Ossama and I enjoy creating things that live on the
+          internet. My interest in web development started back in 2012 when I
+          decided to try editing custom Tumblr themes — turns out hacking
           together a custom reblog button taught me a lot about HTML & CSS!
         </p>
         <br />
