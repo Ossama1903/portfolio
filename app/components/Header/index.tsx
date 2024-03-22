@@ -12,19 +12,19 @@ const Header = () => {
       </div>
       <ul className="flex ml-auto list-none mr-5">
         <li className="mx-5 opacity-100">
-          <Link href="#AboutMe" className="no-underline text-white">
+          <Link href="#AboutMe" className="no-underline text-white text-sm">
             <span className="text-purple-400">01.</span> About
           </Link>
         </li>
         <li className="mx-5">
-          <Link href="#Experience" className="no-underline text-white">
+          <Link href="#Experience" className="no-underline text-white text-sm">
             <span className="text-purple-400">02.</span> Experience
           </Link>
         </li>
-        <li className="mx-5">
+        <li className="mx-5  text-sm">
           <span className="text-purple-400">03.</span> Work
         </li>
-        <li className="mx-5">
+        <li className="mx-5  text-sm">
           <span className="text-purple-400">04.</span> Contact
         </li>
       </ul>
