@@ -60,7 +60,7 @@ const AboutMe = () => {
                   </ul>
                   <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
                     <li className="mb-1 text-purple-400 font-medium">
-                      NodeJS (ES6+)
+                      NodeJS
                     </li>
                     <li className="mb-1 text-purple-400 font-medium">
                       ExpressJS
