@@ -21,12 +21,12 @@ const Header = () => {
             <span className="text-purple-400">02.</span> Experience
           </Link>
         </li>
-        <li className="mx-5  text-sm">
+        {/* <li className="mx-5  text-sm">
           <span className="text-purple-400">03.</span> Work
         </li>
         <li className="mx-5  text-sm">
           <span className="text-purple-400">04.</span> Contact
-        </li>
+        </li> */}
       </ul>
       <div className="mr-10">
         <ResumeButton />

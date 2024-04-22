@@ -10,9 +10,29 @@ import Hero from "./components/Hero";
 import XIcon from "@mui/icons-material/X";
 import Link from "next/link";
 import { useState } from "react";
+import { Alert, Snackbar } from "@mui/material";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   const [currentFont, setCurrentFont] = useState(x.chilanka);
+  const email = "sheikhusamabilal@gmail.com";
+
+  const handleClose = (
+    event?: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const copyEmail = (e: any) => {
+    navigator.clipboard.writeText(email);
+    setOpen(true);
+  };
 
   return (
     <div className={`${currentFont} bg-inherit`}>
@@ -47,13 +67,29 @@ export default function Home() {
       <div className="md:block fixed bottom-[8rem] right-[-5rem] hidden">
         <p className="rotate-90 text-xs">
           <a
-            href="mailto:sheikhusamabilal@gmail.com"
-            className="text-white no-underline"
+            // href="mailto:sheikhusamabilal@gmail.com"
+            onClick={copyEmail}
+            className="text-white no-underline cursor-pointer"
           >
             s h e i k h u s a m a b i l a l @ g m a i l . c o m
           </a>
         </p>
       </div>
+      <Snackbar
+        open={open}
+        autoHideDuration={2000}
+        onClose={handleClose}
+        anchorOrigin={{ horizontal: "center", vertical: "bottom" }}
+      >
+        <Alert
+          onClose={handleClose}
+          severity="success"
+          variant="filled"
+          sx={{ width: "100%" }}
+        >
+          Copied to clipboard
+        </Alert>
+      </Snackbar>
     </div>
   );
 }
