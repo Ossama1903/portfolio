@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import ActiveExperience from "./ActiveExperience";
-import { Experience } from "@/app/types";
+import { Experience as ExperienceType } from "@/app/types";
+import fonts from "../../fonts";
 
-const workExperience: Experience[] = [
+const workExperience: ExperienceType[] = [
   {
     workPlace: "Musketeers Tech",
     designation: "Backend Developer",
@@ -26,7 +27,7 @@ const workExperience: Experience[] = [
   {
     workPlace: "Devclub",
     designation: "Co-founder",
-    timePeriodWorked: "Dec 2023 - Present",
+    timePeriodWorked: "March 2021 - Dec 2023",
     bullets: [
       "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community",
       "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community",
@@ -42,7 +43,7 @@ const Experience = () => {
   return (
     <div className="grid grid-cols-12 gap-4">
       <div className="col-span-3 grid grid-cols-12 h-fit">
-        {workExperience.map((experience: Experience, index) => (
+        {workExperience.map((experience: ExperienceType, index) => (
           <button
             key={index}
             onClick={() =>
@@ -53,11 +54,11 @@ const Experience = () => {
                 )[0]
               )
             }
-            className="text-base text-purple-400 border-none col-span-12 py-2 bg-transparent"
+            className={`${fonts.chilanka} text-base text-purple-400 border-none col-span-12 my-1 bg-transparent`}
             style={{
               borderLeft:
                 activeWorkExperience.workPlace === experience.workPlace
-                  ? "1px solid red"
+                  ? "2px solid #C084FC"
                   : "none",
             }}
           >

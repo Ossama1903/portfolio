@@ -23,23 +23,29 @@ const AboutMe = () => {
                 <p>
                   Hello! My name is Ossama and I enjoy creating things that live
                   on the internet. My interest in web development started back
-                  in 2012 when I decided to try editing custom Tumblr themes —
-                  turns out hacking together a custom reblog button taught me a
-                  lot about HTML & CSS!
+                  in 2018 when I just wondered how websites work — turns out
+                  placing an html button on an empty webpage and setting its
+                  background color really wakes the developer in one.
                 </p>
                 <br />
                 <p>
-                  Fast-forward to today, and I’ve had the privilege of working
-                  at an advertising agency, a start-up, a huge corporation, and
-                  a student-led design studio. My main focus these days is
-                  building accessible, inclusive products and digital
-                  experiences at Upstatement for a variety of clients. I also
-                  recently launched a course that covers everything you need to
-                  build a web app with the Spotify API using Node & React.
+                  Fast-forward to today, and I’ve had the privilege of
+                  graduating in a Computer Science programme from{" "}
+                  <span className="text-purple-400 font-bold">FAST NUCES</span>,
+                  co-founding a start-up (and eventually failing after some
+                  success), working at a huge Pakistani IT corporation
+                  <span className="text-purple-400 font-bold"> (DEVSINC)</span>,
+                  and then working in a startup myself. My main focus these days
+                  is building accessible, inclusive products and digital
+                  experiences for a variety of clients. I also plan on
+                  journaling all of my professional work, so let's see how that
+                  goes :)
                 </p>
                 <br />
                 <p>
-                  Here are a few technologies I’ve been working with recently:
+                  Anyway, lets talk business. While these are definitely not all
+                  of them, here are a few technologies I’ve been working with
+                  recently:
                 </p>
                 <div className="grid grid-cols-12 mt-6">
                   <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">

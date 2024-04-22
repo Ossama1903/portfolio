@@ -27,10 +27,10 @@ const Hero = () => {
         I'm a full stack web developer.
       </h1>
       <p className="transition lg:max-w-[60%] text-lg my-12 ">
-        I’m a software engineer specializing in building exceptional digital
-        experiences for my customers. Currently, I’m focused on building
-        accessible, human-centered products to cater to the need of general
-        population.
+        I'm a software engineer with a knack for crafting remarkable digital
+        experiences, adept at both coding and design aspects. Currently
+        dedicated to developing accessible, user-centric solutions, striving to
+        create impactful products that resonate with users on a human level.
       </p>
       <Button
         className={`${fonts.chilanka} pt-3 px-3 transition hover:-translate-x-1 hover:-translate-y-1 ease-in-out hover:shadow-[2px_2px_3px_3px_rgba(192,132,252)] text-white border-solid border-[1px] border-purple-400`}

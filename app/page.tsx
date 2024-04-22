@@ -34,8 +34,14 @@ export default function Home() {
         >
           <LinkedIn className="mb-4" />
         </Link>
-        <XIcon className="mb-4" />
-        <GitHub className="mb-[9rem]" />
+        {/* <XIcon className="mb-4" /> */}
+        <Link
+          href="https://github.com/Ossama1903"
+          target="_blank"
+          className="text-white"
+        >
+          <GitHub className="mb-[9rem]" />
+        </Link>
         <hr className="bg-white rotate-90 w-[15rem] ml-[-6.8rem]" />
       </div>
       <div className="md:block fixed bottom-[8rem] right-[-5rem] hidden">
