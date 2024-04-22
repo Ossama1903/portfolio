@@ -44,30 +44,31 @@ const AboutMe = () => {
                 <div className="grid grid-cols-12 mt-6">
                   <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
                     <li className="mb-1 text-purple-400 font-medium">
-                      JavaScrpit (ES6+)
+                      JavaScript (ES6+)
                     </li>
                     <li className="mb-1 text-purple-400 font-medium">
                       Typescript
                     </li>
-                    <li className="mb-1 text-purple-400 font-medium">React</li>
+                    <li className="mb-1 text-purple-400 font-medium">Python</li>
+                    <li className="mb-1 text-purple-400 font-medium">NestJS</li>
                   </ul>
                   <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
                     <li className="mb-1 text-purple-400 font-medium">
-                      JavaScrpit (ES6+)
+                      NodeJS (ES6+)
                     </li>
                     <li className="mb-1 text-purple-400 font-medium">
-                      Typescript
+                      ExpressJS
                     </li>
-                    <li className="mb-1 text-purple-400 font-medium">React</li>
+                    <li className="mb-1 text-purple-400 font-medium">
+                      ReactJS
+                    </li>
                   </ul>
                   <ul className="col-span-6 md:col-span-4 list-none mb-4 xl:mb-0">
                     <li className="mb-1 text-purple-400 font-medium">
-                      JavaScrpit (ES6+)
+                      FastAPI
                     </li>
-                    <li className="mb-1 text-purple-400 font-medium">
-                      Typescript
-                    </li>
-                    <li className="mb-1 text-purple-400 font-medium">React</li>
+                    <li className="mb-1 text-purple-400 font-medium">Django</li>
+                    <li className="mb-1 text-purple-400 font-medium">NextJS</li>
                   </ul>
                 </div>
               </div>

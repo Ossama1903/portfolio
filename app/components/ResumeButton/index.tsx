@@ -1,6 +1,6 @@
 import Button from "../Button";
 import Link from "next/link";
-
+import fonts from "../../fonts";
 const ResumeButton = () => {
   return (
     <Link
@@ -8,7 +8,16 @@ const ResumeButton = () => {
       download="Ossama's resume"
       target="_blank"
     >
-      <Button className="transition ease-in-out delay-150 py-2 px-5 cursor-pointer hover:bg-purple-400 hover:text-white">Resume</Button>
+      {/* <Button
+        className={`${fonts.chilanka} transition ease-in-out delay-150 px-5 cursor-pointer hover:bg-purple-400 hover:text-white`}
+      >
+        Resume
+      </Button> */}
+      <Button
+        className={`${fonts.chilanka} cursor-pointer pt-1 px-3 transition hover:-translate-x-1 hover:-translate-y-1 ease-in-out hover:shadow-[2px_2px_3px_3px_rgba(192,132,252)] text-white border-solid border-[1px] border-purple-400`}
+      >
+        Résumé
+      </Button>
     </Link>
   );
 };
