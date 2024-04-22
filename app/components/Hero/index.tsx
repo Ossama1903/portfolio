@@ -1,12 +1,16 @@
 import { Button } from "@mui/material";
 import fonts from "../../fonts";
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Hero = () => {
   const { ref, inView, entry } = useInView();
   const animateClasses = `${
-    !inView ? "opacity-0 translate-y-10" : "opacity-100 translate-y-0"
+    !inView ? "opacity-0 translate-y-0" : "opacity-100 -translate-y-0"
   } duration-1000`;
+  useEffect(() => {
+    console.log(`Hero ${inView}`);
+  }, [inView]);
 
   return (
     <section

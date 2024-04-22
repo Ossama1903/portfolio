@@ -10,30 +10,16 @@ import Hero from "./components/Hero";
 import XIcon from "@mui/icons-material/X";
 import Link from "next/link";
 import { useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 export default function Home() {
   const [currentFont, setCurrentFont] = useState(x.chilanka);
-  const { ref: heroRef, inView: heroInView, entry: heroEntry } = useInView();
-
-  const animateClasses = `${
-    !heroInView ? "opacity-0 translate-y-10" : "opacity-100 translate-y-0"
-  } duration-1000`;
 
   return (
     <div className={`${currentFont} bg-inherit`}>
       <Header />
       <Container>
         <Hero />
-        <div id="AboutMe" className={`py-2 bg-inherit ${animateClasses}`}>
-          <div className="my-12 py-12 bg-inherit">
-            <div className="py-12 bg-inherit">
-              <HeadingWithBorder heading="01. About Me">
-                <AboutMe />
-              </HeadingWithBorder>
-            </div>
-          </div>
-        </div>
+        <AboutMe />
         <div id="Experience" className="bg-inherit">
           <HeadingWithBorder heading="02. My Work Experience">
             <Experience />
