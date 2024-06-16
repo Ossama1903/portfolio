@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔗 [portfolio-jirihofman.vercel.app](https://portfolio-jirihofman.vercel.app)
 
-## Getting Started
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?repository-url=https%3A%2F%2Fgithub.com%2Fjirihofman%2Fportfolio&env=GH_TOKEN,VC_TOKEN)
 
-First, run the development server:
+My personal portfolio website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and deployed to [Vercel](https://vercel.com/). Based on [chronark's site](https://chronark.com/). Some ideas borrowed from [leerob/leerob.io](https://github.com/leerob/leerob.io).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+It is supposed to be used as a **template for other GitHub users' portfolios**. Data about user and projects are gathered via GitHub and Vercel API.
+
+## Tech stack
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com), [Primer](https://primer.style/)
+## Running Locally
+
+
+```sh
+git clone https://github.com/jirihofman/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env` file similar to [`.env.example`](https://github.com/jirihofman/profile/blob/main/.env.example).
+```sh
+mv .env.example .env.local
+```
+Add GitHub token into the new file.
+```sh
+GH_TOKEN=YOUR_GH_TOKEN
+# If you have Vercel projects, create a token here https://vercel.com/account/tokens to get more info.
+VC_TOKEN=YOUR_VERCEL_TOKEN
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Then install dependencies and run the development server:
+```sh
+# Install dependencies.
+npm install
+# Replace jirihofman's personal info with octocat's.
+npm run setup
+# Start hacking.
+npm dev
+```
 
-## Learn More
+Edit `data.json` to put your personal information there.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cloning / Forking
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Please remove all of my personal information in `data.json` before deploying your own version of this site by running `npm run setup`. Once you are happy with your `data.json`, set
+```sh
+# .env or .env.local
 
-## Deploy on Vercel
+IS_TEMPLATE=false
+```
+in your ENVs to prevent `npm build` from reverting `data.json` back to Octocat's data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### To check before deploying
+- [ ] `data.json`: githubUsername, description, heroNames. Handled by `setup.mjs`.
+- [ ] `README.md`: link at the top
+- [ ] `app/layout.jsx`: metadata - title, description, favicon. Handled by `setup.mjs`.
+- [ ] `public/favicon.ico`. Handled by `setup.mjs`.
